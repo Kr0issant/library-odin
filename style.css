@@ -27,13 +27,55 @@ body {
 }
 .new-btn:hover {
     transform: scale(1.05);
+    cursor:pointer;
 }
 .new-btn:active {
     transform: scale(0.95);
 }
 
 .content {
-    
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.book-card {
+    background-color: rgb(207, 190, 169);
+    width: 15rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.book-card > img {
+    border-radius: 5px;
+}
+.book-actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.book-actions > button {
+    padding: 5px;
+    margin-top: 2px;
+    border: none;
+    color: white;
+    background-color: rgb(128, 207, 109);
+    font-weight:bold;
+}
+.read-toggle {
+    border-radius: 15px 0px 0px 15px;
+}
+.read-toggle:hover {
+    cursor:pointer;
+}
+.delete-btn {
+    border-radius: 0px 15px 15px 0px;
+}
+.delete-btn:hover {
+    cursor:pointer;
 }
 
 .new-modal {
@@ -77,6 +119,10 @@ body {
     border: none;
     color: rgb(234, 77, 77);
     user-select: none;
+}
+.new-close-btn:hover {
+    transition: color 0.1s black;
+    cursor:pointer;
 }
 .new-modal-inner > form {
     display: flex;
@@ -123,4 +169,8 @@ body {
     border: none;
     border-radius: 10px;
     padding: 10px;
+}
+.new-submit-btn:hover {
+    transition: color 0.1s black;
+    cursor:pointer;
 }
